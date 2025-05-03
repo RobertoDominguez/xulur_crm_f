@@ -210,6 +210,7 @@ return [
                 'ukrainian-hryvnia'           => 'Grivna Ucraniana (UAH)',
                 'united-arab-emirates-dirham' => 'Dírham de los Emiratos Árabes Unidos (AED)',
                 'united-states-dollar'        => 'Dólar Estadounidense (USD)',
+                'bolivian-boliviano'          => 'Boliviano (BOB)',
                 'uzbekistani-som'             => 'Som Uzbeko (UZS)',
                 'venezuelan-bolívar'          => 'Bolívar Venezolano (VEF)',
                 'vietnamese-dong'             => 'Dong Vietnamita (VND)',

@@ -56,6 +56,7 @@ class Installer extends Command
         'ARS' => 'Argentine Peso',
         'AUD' => 'Australian Dollar',
         'BDT' => 'Bangladeshi Taka',
+        'BOB' => 'Bolivian Boliviano',
         'BRL' => 'Brazilian Real',
         'CAD' => 'Canadian Dollar',
         'CHF' => 'Swiss Franc',

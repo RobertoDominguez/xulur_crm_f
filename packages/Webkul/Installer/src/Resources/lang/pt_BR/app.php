@@ -165,6 +165,7 @@ return [
                 'select-timezone'             => 'Selecionar Fuso Horário',
                 'warning-message'             => 'Atenção! As configurações de idioma e moeda padrão não podem ser alteradas após definidas.',
                 'united-states-dollar'        => 'Dólar Americano (USD)',
+                'bolivian-boliviano'          => 'Boliviano (BOB)',
             ],
 
             'installation-processing' => [
