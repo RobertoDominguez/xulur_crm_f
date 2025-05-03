@@ -16,15 +16,14 @@ return new class extends Migration
             $table->string('unique_id')->nullable()->unique();
         });
 
-        DB::statement("
-            UPDATE persons
-            SET unique_id = CONCAT(
-                user_id, '|', 
-                organization_id, '|', 
+        DB::table('persons')->update([
+            'unique_id' => DB::raw("CONCAT(
+                user_id, '|',
+                organization_id, '|',
                 JSON_UNQUOTE(JSON_EXTRACT(emails, '$[0].value')), '|',
                 JSON_UNQUOTE(JSON_EXTRACT(contact_numbers, '$[0].value'))
-            )
-        ");
+            )")
+        ]);
     }
 
     /**
