@@ -15,7 +15,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('activities', function (Blueprint $table) {
-            $table->dropForeign('activities_user_id_foreign');
+            $table->dropForeign(['user_id']);
 
             $table->unsignedInteger('user_id')->nullable()->change();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -34,10 +34,10 @@ return new class extends Migration
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
             // Drop the foreign key constraint using raw SQL.
-            DB::statement('ALTER TABLE activities DROP FOREIGN KEY activities_user_id_foreign');
+            $table->dropForeign(['user_id']); 
 
             // Drop the index.
-            DB::statement('ALTER TABLE activities DROP INDEX activities_user_id_foreign');
+            $table->dropIndex(['user_id']);
 
             // Change the column to be non-nullable.
             $table->unsignedInteger('user_id')->nullable(false)->change();
