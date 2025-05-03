@@ -98,6 +98,7 @@
             'TWD' => 'new-taiwan-dollar',
             'UAH' => 'ukrainian-hryvnia',
             'USD' => 'united-states-dollar',
+            'BOB' => 'bolivian-boliviano',
             'UZS' => 'uzbekistani-som',
             'VEF' => 'venezuelan-bolívar',
             'VND' => 'vietnamese-dong',
